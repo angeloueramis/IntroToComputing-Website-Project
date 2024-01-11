@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(18, 18, 18);
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(finalpromise.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(250, 175, 35);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.headertext{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headertext h1 span{
+    color:rgb(250, 175, 35);
+    font-style: italic;
+}
+.headertext p{
+    margin-top: 20px;
+}
+/*about*/
+#about{
+    padding: 80px 0;
+    color:white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    height: auto;
+}
+.col2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(250, 175, 35);
+}
+.col2 p{
+    margin: 20px;
+}
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablinks::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(250, 175, 35);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tablinks.active-link::after{
+    width: 50%;
+}
+.tabcontents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tabcontents ul li span{
+    color: rgb(250, 175, 35);
+    font-size: 14px;
+}
+.tabcontents{
+    display: none;
+}
+.tabcontents.active-tab{
+    display: block;
+}
+/*service*/
+#services{
+    padding: 30px 0;
+}
+.slist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.slist div{
+    background: rgb(78, 74, 74);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.slist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.slist div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.slist div:hover{
+    background: rgb(250, 175, 35);
+    transform: translateY(-10px);
+}
+/*socials*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contacts {
+    margin: 20px auto;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    flex-basis: 60%;
+}
+#contacts h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(250, 175, 35);
+}
+    #contacts h2 {
+    color: rgb(250, 175, 35);
+    font-size: 55px;
+}
+    #contacts h4 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+    .social-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+    .social-list li {
+    margin-bottom: 10px;
+}
+    .fb a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: #1877F2; 
+    color: white;
+    border-radius: 50px;
+}
+    .ig a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    color: white;
+    border-radius: 50px;
+}
+    .gmail a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #3e65cf,#c71610,#f2a60c,#3b60c4,#08851b);
+    color: white;
+    border-radius: 50px;
+}
+    .social-list a:hover {
+    opacity: 0.7;
+}
+.pic{
+    flex-basis: 35%;
+}
